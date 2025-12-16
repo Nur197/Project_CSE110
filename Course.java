@@ -1,6 +1,6 @@
 public class Course {
     private String courseName;
-    private String courseCode; // optional (not used in DB table)
+    private String courseCode; 
     private String grade;
 
     public Course(String courseName, String courseCode, String grade) {
@@ -26,4 +26,5 @@ public class Course {
         return courseName + " - Grade: " + grade;
     }
 }
+
 
