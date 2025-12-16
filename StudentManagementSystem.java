@@ -3,12 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StudentManagementSystem {
-
-    /* =========================
-       ADD STUDENT (INSERT)
-       ========================= */
     public void addStudent(Student student) {
-
         String sql = """
             INSERT INTO students
             (student_name, student_id, date_of_birth, course, grade)
@@ -37,9 +32,6 @@ public class StudentManagementSystem {
         }
     }
 
-    /* =========================
-       READ ALL STUDENTS
-       ========================= */
     public List<Student> getAllStudents() {
 
         List<Student> list = new ArrayList<>();
@@ -76,9 +68,6 @@ public class StudentManagementSystem {
         return list;
     }
 
-    /* =========================
-       DISPLAY STUDENTS
-       ========================= */
     public void displayStudents() {
 
         List<Student> students = getAllStudents();
@@ -109,9 +98,6 @@ public class StudentManagementSystem {
         }
     }
 
-    /* =========================
-       DELETE FULL STUDENT
-       ========================= */
     public void deleteStudentById(String studentId) {
 
         String sql = "DELETE FROM students WHERE student_id = ?";
@@ -133,9 +119,6 @@ public class StudentManagementSystem {
         }
     }
 
-    /* =========================
-       DELETE SPECIFIC COURSE
-       ========================= */
     public void deleteCourse(String studentId, String courseName) {
 
         String sql = "DELETE FROM students WHERE student_id = ? AND course = ?";
@@ -159,3 +142,4 @@ public class StudentManagementSystem {
         }
     }
 }
+
