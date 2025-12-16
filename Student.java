@@ -1,7 +1,7 @@
 public class Student {
     private String name;
     private String id;
-    private String dob; // keep as "YYYY-MM-DD"
+    private String dob; 
     private Course[] courses;
 
     public Student(String name, String id, String dob) {
@@ -42,3 +42,4 @@ public class Student {
         return "Name: " + name + "\nID: " + id + "\nDOB: " + dob;
     }
 }
+
